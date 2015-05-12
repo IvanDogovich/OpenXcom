@@ -236,6 +236,16 @@ size_t ComboBox::getSelected() const
 }
 
 /**
+ * sets the button text independent of the currently selected option.
+ * @param text the text to display
+ */
+void ComboBox::setText(const std::wstring &text)
+{
+	_button->setText(text);
+}
+
+
+/**
  * Changes the currently selected option.
  * @param sel Selected row.
  */
